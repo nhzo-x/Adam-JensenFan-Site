@@ -352,6 +352,7 @@ footer {
 
   .about-photo-wrapper {
     width: 100%;
+    align-items: center;
   }
 
   .about-photo {
@@ -363,10 +364,28 @@ footer {
     box-sizing: border-box;
   }
 
+  /* COVER ART */
+  .song-pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .pill-art {
+    width: 28%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+
   body::before {
     background-position: 58% 50% !important;
     background-size: cover !important;
     filter: blur(2px) !important;
     transform: translate3d(0, 0, 0) !important;
   }
+
 }
