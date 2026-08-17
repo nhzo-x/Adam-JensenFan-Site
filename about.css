@@ -330,6 +330,14 @@ footer {
     white-space: normal;
   }
 
+  h2 {
+  width: auto;
+  max-width: 100%;
+  font-size: 250%;
+  text-align: center;
+  margin: 0 auto;
+  }
+
   .navbar {
     display: flex;
     justify-content: center;
