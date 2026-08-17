@@ -1,0 +1,372 @@
+/* --- ANIMATION DEFINITION --- */
+@keyframes quickFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- MASTER PAGE HEADER --- */
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid whitesmoke;
+
+  width: 780px;
+  margin: 0 auto;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  white-space: nowrap;
+
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  font-family: 'Road Rage', sans-serif;
+  font-size: 500%;
+}
+
+body {
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  filter: blur(2px);
+  background-image: url("images/adamjensen3.jpg");
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 100%);
+  z-index: -1;
+}a
+
+/* --- THE MASTER ANIMATION LOOP (FIXED: Added contact links here!) --- */
+.about-content, h4, .contact-links, footer {
+  opacity: 0;
+  animation: quickFade 0.6s ease-in forwards !important;
+}
+
+/* Precise Staggered Delays */
+.intro { animation-delay: 0.4s; }
+.featured-card { animation-delay: 0.6s; }
+h4 { animation-delay: 0.8s; }
+.contact-links { animation-delay: 1.0s; }
+footer{
+    animation-delay: 1.2s;
+}
+
+/* --- MASTER NAVIGATION --- */
+
+.navbar {
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  max-width: 850px;
+
+  margin: 0 auto 20px auto;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.navbar a {
+  font-size: 15px;
+
+  margin: 10px;
+
+  color: lightgray;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-family: 'Courier New', Courier, monospace;
+
+  font-weight: lighter;
+
+  display: inline-block;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.navbar a:hover {
+  color: blue;
+
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  color: lightgray;
+  background-color: rgba(40, 40, 40, 0.65);
+  border: 1px solid rgba(211, 211, 211, 0.4);
+  border-radius: 30px;
+
+  padding: 10px 18px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  text-decoration: none;
+
+  backdrop-filter: blur(5px);
+
+  z-index: 1000;
+
+  transition: 0.2s ease;
+}
+
+.back-to-top:hover {
+  background-color: rgba(70, 70, 70, 0.75);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.about-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  align-items: center; 
+  justify-content: flex-start;
+      grid-column: 2;
+    grid-row: 1 / span 3;
+  
+}
+
+.about-container{
+    display: grid;
+    grid-column: 1;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    align-items: center;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.about-photo{
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.7);
+}
+
+.about-content-card{
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content-card a{
+  text-decoration: none;
+  color: white;
+    transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.about-content-card a:hover{
+  color: blue;
+
+  transform: scale(1.1);
+}
+
+h2{
+  color: lightgrey;
+  text-align: center;
+  font-size: 300%;
+  white-space: nowrap;
+  font-family: 'Road Rage', sans-serif;
+  font-weight: bolder;
+  border-bottom: 2px solid lightgray;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+p{
+  font-family: manrope;
+  color: lightgray;
+  font-size: 100%;
+}
+
+h3{
+  color: lightgrey;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Road Rage', sans-serif;
+  font-weight: bolder;
+  border-bottom: 2px solid lightgray;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.fun-fact-card{
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.fun-fact-card p{
+    margin-top: 20px;
+    text-align: center;
+    color: lightgray;
+    line-height: 1.5;
+}
+
+.fun-fact-card h3 {
+  width: max-content !important; /* Forces the header box to expand to match the text width */
+  white-space: nowrap !important; /* Strictly prevents the text from wrapping onto a second line */
+}
+
+.pill-art {
+
+  margin-top: 10px;
+
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 6px;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.pill-info {
+  display: flex;
+
+  flex-direction: column;
+
+  text-align: left;
+
+  gap: 6px;
+}
+
+
+
+
+footer{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: lightgrey;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+/* --- ANIMATION SEQUENCE TRIGGER --- */
+/* Groups your page elements together to execute the quick fade timeline */
+ .about-content-card, .about-photo, .about-photo-wrapper, footer {
+  opacity: 0;
+  animation: quickFade 0.6s ease-in forwards;
+}
+
+/* Staggers the arrival timestamps so the layout builds onto the screen dynamically */
+
+.about-content-card { 
+  animation-delay: 0.5s; /* The text card fades in first */
+}
+
+.about-photo { 
+  animation-delay: 0.8s; /* The photo snaps onto the screen right after */
+}
+
+.about-photo-wrapper { 
+  animation-delay: 0.8s; /* The entire right column (photo + fun fact) fades in next */
+}
+
+footer { 
+  animation-delay: 1.1s; /* The footer lands last at the very bottom */
+}
+
+/* --- MOBILE HEADER --- */
+
+@media (max-width: 768px) {
+
+  h1 {
+    width: 90%;
+    font-size: 400%;
+    white-space: normal;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .about-content-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-photo-wrapper {
+    width: 100%;
+  }
+
+  .about-photo {
+    max-width: 100%;
+  }
+
+  .fun-fact-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body::before {
+    background-position: 58% 50% !important;
+    background-size: cover !important;
+    filter: blur(2px) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+}

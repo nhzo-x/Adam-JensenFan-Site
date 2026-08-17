@@ -1,0 +1,407 @@
+/* --- ANIMATION DEFINITION --- */
+@keyframes quickFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- MASTER PAGE HEADER --- */
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid whitesmoke;
+
+  width: 780px;
+  margin: 0 auto;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  white-space: nowrap;
+
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  font-family: 'Road Rage', sans-serif;
+  font-size: 500%;
+}
+
+
+body {
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  filter: blur(2px);
+  background-image: url("images/adamjensen3.jpg");
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 100%);
+  z-index: -1;
+}
+
+/* --- THE MASTER ANIMATION LOOP (FIXED: Added contact links here!) --- */
+ .intro, .featured-card, h4, .contact-links, footer {
+  opacity: 0;
+  animation: quickFade 0.6s ease-in forwards !important;
+}
+
+/* Precise Staggered Delays */
+.intro { animation-delay: 0.4s; }
+.featured-card { animation-delay: 0.6s; }
+h4 { animation-delay: 0.8s; }
+.contact-links { animation-delay: 1.0s; }
+footer{
+    animation-delay: 1.2s;
+}
+
+/* --- MASTER NAVIGATION --- */
+
+.navbar {
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  max-width: 850px;
+
+  margin: 0 auto 20px auto;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.navbar a {
+  font-size: 15px;
+
+  margin: 10px;
+
+  color: lightgray;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-family: 'Courier New', Courier, monospace;
+
+  font-weight: lighter;
+
+  display: inline-block;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.navbar a:hover {
+  color: blue;
+
+  transform: scale(1.1);
+}
+
+.featured-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.album-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-art {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+
+/* --- SECTOR GRAPHICS --- */
+.music-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-logo {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.music-logo:hover {
+  transform: scale(1.2);
+}
+
+/* --- TRACKLIST SYSTEM --- */
+.tracklist-side {
+  text-align: left;
+}
+
+.tracklist-side h3 {
+  margin-top: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.tracklist-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tracklist-side li {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.tracklist-side li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 10px 0;
+}
+
+.tracklist-side li:hover {
+  color: darkblue;
+  padding-left: 5px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tracklist-side li:last-child {
+  border-bottom: none;
+}
+
+/* --- COMPONENT HEADERS --- */
+h2 {
+  color: lightgrey;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Road Rage', sans-serif;
+  font-weight: bolder;
+  border-bottom: 2px solid lightgray;
+  width: 150px;
+  margin: 0 auto;
+}
+
+h4 {
+  color: lightgrey;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Road Rage', sans-serif;
+  font-weight: bolder;
+  border-bottom: 2px solid lightgray;
+  width: 150px;
+  margin: 40px auto 0 auto; /* Keeps layout spacing uniform */
+}
+
+.p2 {
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: lightgray;
+  font-size: 150%;
+}
+
+.listennow {
+  text-align: center;
+  color: white;
+  font-size: small;
+}
+
+/* --- INTRO REGION --- */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 850px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 30px;
+}
+
+.adam-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+}
+
+.intro-text {
+  color: lightgrey;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: manrope;
+  max-width: 450px;
+}
+
+.intro-text h3{
+  color: white;
+  font-family: manrope;
+  font-size: 250%;
+  margin: 0 0 10px 0;
+}
+
+.intro-subtext{
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.now-playing{
+  max-width: 855px;
+  
+  margin: 40px auto;
+
+  box-sizing: border-box;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  padding: 16px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.now-playing iframe{
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* --- FOOTER OVERLAY INTERACTIVE CONNECT REGION --- */
+/* 1. MASTER ANIMATION GROUP: Keep the CONTAINER box in the fade loop */
+.intro, .featured-card, h4, .now-playing, .contact-links {
+  opacity: 0;
+  animation: quickFade 0.6s ease-in forwards; /* REMOVED !important from here */
+}
+
+/* 2. THE CONTAINER BOX STYLING */
+.contact-links { 
+  text-align: center; 
+  margin-top: 20px; 
+  margin-bottom: 30px;
+  color: lightgrey; 
+}
+
+/* 3. THE LINKS INSIDE THE BOX */
+.contact-links a { 
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 15px; 
+  color: lightgray; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  display: inline-block; 
+  margin-left: 20px;
+  
+  /* Clear time units are set here without animation conflicts */
+  transition: color 0.2s ease, transform 0.2s ease; 
+}
+
+/* 4. THE HOVER EVENT */
+.contact-links a:hover { 
+  color: blue; 
+  transform: scale(1.1); /* NO !important needed anymore */
+}
+
+footer{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: lightgrey;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+/* --- MOBILE BREAKPOINTS --- */
+@media (max-width: 768px) {
+
+  h1 {
+    width: 90%;
+    font-size: 400%;
+    white-space: normal;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  
+  .intro { 
+    flex-direction: column; 
+    text-align: center; 
+  } 
+  
+  .featured-content { 
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+  }
+  
+  .now-playing{
+    margin-bottom: -10px;
+  }
+
+.now-playing iframe {
+    height: 410px;
+}
+
+  .intro-text{
+  text-align: center;
+  }
+
+  /* FIXED: Added transform to unlock hardware movement on mobile devices */
+  body::before { 
+    background-position: 58% 50% !important; 
+    background-size: cover !important; 
+    filter: blur(2px) !important; 
+    
+    /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
+    transform: translate3d(0, 0, 0) !important;
+  } 
+}
+
+
