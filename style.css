@@ -393,15 +393,17 @@ footer{
   text-align: center;
   }
 
-  /* FIXED: Added transform to unlock hardware movement on mobile devices */
-  body::before { 
-    background-position: 58% 50% !important; 
-    background-size: cover !important; 
-    filter: blur(2px) !important; 
-    
-    /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
-    transform: translate3d(0, 0, 0) !important;
-  } 
+body::before {
+  background-position: 58% 50% !important;
+  background-size: cover !important;
+  filter: blur(2px) !important;
+  transform: none !important;
+
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
 }
 
 
