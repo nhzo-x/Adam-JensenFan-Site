@@ -556,7 +556,7 @@ footer {
   /* FIXED: Backed off the position to 65% and restored your original 2px blur */
 body::before {
   background-position: 58% 50% !important;
-  background-size: cover !important;
+  background-size: auto 100% !important;
   filter: blur(2px) !important;
   transform: none !important;
 
