@@ -389,11 +389,16 @@ footer {
     object-fit: cover;
   }
 
-  body::before {
-    background-position: 58% 50% !important;
-    background-size: cover !important;
-    filter: blur(2px) !important;
-    transform: translate3d(0, 0, 0) !important;
-  }
+body::before {
+  background-position: 58% 50% !important;
+  background-size: cover !important;
+  filter: blur(2px) !important;
+  transform: none !important;
+
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
 
 }
