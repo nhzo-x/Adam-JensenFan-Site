@@ -411,9 +411,12 @@ footer {
   } 
 
 
-  body::before {
-    background-position: 58% 50%;
-    background-size: cover;
-    filter: blur(2px);
-  }
+  body::before { 
+    background-position: 58% 50% !important; 
+    background-size: cover !important; 
+    filter: blur(2px) !important; 
+    
+    /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
+    transform: translate3d(0, 0, 0) !important;
+  } 
 }
