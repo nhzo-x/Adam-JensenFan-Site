@@ -391,14 +391,9 @@ footer {
 
 body::before {
   background-position: 58% 50% !important;
-  background-size: auto 100% !important;
+  background-size: auto 120% !important;
+  background-repeat: no-repeat !important;
   filter: blur(2px) !important;
   transform: none !important;
-
-  position: fixed !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
 }
-
 }
