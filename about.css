@@ -337,7 +337,7 @@ footer {
   text-align: center;
   margin: 0 auto;
   }
-
+  
   .navbar {
     display: flex;
     justify-content: center;
@@ -391,7 +391,7 @@ footer {
 
 body::before {
   background-position: 58% 50% !important;
-  background-size: auto 100% !important;
+  background-size: cover !important;
   filter: blur(2px) !important;
   transform: none !important;
 
@@ -400,4 +400,5 @@ body::before {
   width: 100% !important;
   height: 100% !important;
 }
+
 }
