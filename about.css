@@ -286,13 +286,20 @@ h3{
 
 
 
-footer{
+footer {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     color: lightgrey;
     margin-top: 60px;
     padding-bottom: 20px;
+}
+
+.creator-note {
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+    opacity: 0.7;
+    font-weight: lighter;
 }
 
 /* --- ANIMATION SEQUENCE TRIGGER --- */
