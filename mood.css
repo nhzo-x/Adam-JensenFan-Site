@@ -1,0 +1,312 @@
+@keyframes quickFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid whitesmoke;
+
+  width: 780px;
+  margin: 0 auto;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  white-space: nowrap;
+
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  font-family: 'Road Rage', sans-serif;
+  font-size: 500%;
+}
+
+.navbar {
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  max-width: 850px;
+
+  margin: 0 auto 20px auto;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar a {
+  font-size: 15px;
+
+  margin: 10px;
+
+  color: lightgray;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-family: 'Courier New', Courier, monospace;
+
+  font-weight: lighter;
+
+  display: inline-block;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.navbar a:hover {
+  color: blue;
+
+  transform: scale(1.1);
+}
+
+
+body {
+  background-color: black;
+  overflow-y: scroll;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("images/adamjensen3.jpg");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    opacity: 0.4;
+    -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 25%, transparent 100%);
+    z-index: -1;
+}
+
+h2 {
+  color: lightgrey;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Road Rage', sans-serif;
+  font-weight: normal;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+
+.mood-buttons{
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    
+}
+
+.mood-buttons button{
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 16px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mood-buttons button:hover{
+  transform: scale(1.07);
+
+  background-color: rgba(255, 255, 255, 0.10);
+  
+}
+
+#mood-image {
+    display: none;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+#recommendation {
+    display: none;
+    align-items: center;
+    gap: 17px;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 16px 20px;
+    box-sizing: border-box;
+  
+
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mood-song {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.mood-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#recommendation-label {
+    font-family: 'Manrope', sans-serif;
+    color: lightgray;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 0px;
+}
+.music-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.music-logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.music-logo:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: lightgrey;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.back {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  color: lightgray;
+  background-color: rgba(40, 40, 40, 0.65);
+  border: 1px solid rgba(211, 211, 211, 0.4);
+  border-radius: 30px;
+
+  padding: 10px 18px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  text-decoration: none;
+
+  backdrop-filter: blur(5px);
+
+  z-index: 1000;
+
+  transition: 0.2s ease;
+}
+
+.back:hover {
+  background-color: rgba(70, 70, 70, 0.75);
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+h2,
+.mood-buttons,
+.mood-song,
+.recommendation,
+.footer,
+.music-links {
+  opacity: 0;
+  animation: quickFade 0.6s ease-in forwards;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+    width: 90%;
+    font-size: 400%;
+    white-space: normal;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+    .mood-buttons {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 15px;
+    }
+
+    #recommendation {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    #mood-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    #mood-song {
+        font-size: 15px;
+    }
+
+    body::before { 
+    background-position: 58% 50% !important; 
+    background-size: cover !important; 
+    filter: blur(2px) !important; 
+    
+    /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
+    transform: translate3d(0, 0, 0) !important;
+  } 
+
+}
+
