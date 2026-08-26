@@ -139,6 +139,11 @@ let restlessSongs= [
     {
         title: "Cellophane",
         image: "images/hymns.jpg"
+    },
+
+    {
+        title: "Tombstone",
+        image: "images/tombstone.jpg"
     }
 ]
 
@@ -198,6 +203,21 @@ let somberSongs = [
     {
         title: "Mother, Mother",
         image: "images/hymns.jpg"
+    },
+
+    {
+        title: "If There Is a God, Kill Me Now",
+        image: "images/ifthereisagod.jpg"
+    },
+
+    {
+        title: "High (Unlovable)",
+        image: "images/high.jpg"
+    },
+
+    {
+        title: "Shoulda Known Better",
+        image: "images/shoulda.jpg"
     }
 ]
 
