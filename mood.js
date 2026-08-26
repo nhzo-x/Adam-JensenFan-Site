@@ -12,6 +12,35 @@ let angrySongs= [
     {
         title: "Sigh",
         image: "images/hymns.jpg"
+    },
+    {
+        title: "The Arsonist",
+        image: "images/arsonist.jpg"
+    },
+
+    {
+        title: "Warpath",
+        image: "images/warpath.jpg"
+    },
+    
+    {
+        title: "Street Brawling Millionare",
+        image: "images/streetbrawling.jpg"
+    },
+
+    {
+        title: "Rabbit Hole",
+        image: "images/hymns.jpg"
+    },
+
+    {
+        title: "Your Fantasy Is My Nightmare",
+        image: "images/fantasy.jpg"
+    },
+
+    {
+        title: "Bullet With Your Name on It",
+        image: "images/bullet.jpg"
     }
 ];
 
@@ -36,6 +65,21 @@ let romanticSongs = [
     {
         title: "Lovers in the Dark",
         image: "images/lovers.jpg"
+    },
+
+    {
+        title: "Mercy",
+        image: "images/mercy.jpg"
+    },
+
+    {
+        title: "Tall Glass of Cyanide",
+        image: "images/tallglass.jpg"
+    },
+
+    {
+        title: "Gravedigger",
+        image: "images/gravedigger.jpg"
     }
 ]
 
@@ -75,6 +119,26 @@ let restlessSongs= [
     {
         title: "Invisible",
         image: "images/invisible.jpg"
+    },
+
+    {
+        title: "Pales",
+        image: "images/pales.jpg"
+    },
+
+    {
+        title: "Nemesis",
+        image: "images/nemesis.jpg"
+    },
+
+    {
+        title: "Pretty Please",
+        image: "images/prettyplease.jpg"
+    },
+
+    {
+        title: "Cellophane",
+        image: "images/hymns.jpg"
     }
 ]
 
@@ -109,6 +173,31 @@ let somberSongs = [
     {
         title: "The Devil was an Angel Too",
         image: "images/angeltoo.jpg"
+    },
+
+    {
+        title: "The Grave (Okay)",
+        image: "images/thegrave.jpg"
+    },
+
+    {
+        title: "Tears on the Melody",
+        image: "images/tears.jpg"
+    },
+
+    {
+        title: "You Don't Love Me Like Before",
+        image: "images/youdontloveme.jpg"
+    },
+
+    {
+        title: "The Mystic",
+        image: "images/themystic.jpg"
+    },
+
+    {
+        title: "Mother, Mother",
+        image: "images/hymns.jpg"
     }
 ]
 
