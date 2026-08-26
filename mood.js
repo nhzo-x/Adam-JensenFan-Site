@@ -41,6 +41,11 @@ let angrySongs= [
     {
         title: "Bullet With Your Name on It",
         image: "images/bullet.jpg"
+    },
+
+    {
+        title: "Gravedigger",
+        image: "images/gravedigger.jpg"
     }
 ];
 
@@ -77,10 +82,6 @@ let romanticSongs = [
         image: "images/tallglass.jpg"
     },
 
-    {
-        title: "Gravedigger",
-        image: "images/gravedigger.jpg"
-    }
 ]
 
 let restlessButton = document.getElementById("restless");
