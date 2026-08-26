@@ -58,6 +58,7 @@ h4,
 .music-column h3,
 .skip-container,
 footer,
+.mood-link,
 .music-links {
   opacity: 0;
   animation: quickFade 0.6s ease-in forwards;
@@ -417,6 +418,12 @@ p a{
     text-align: center;
     margin: 5px 0 40px 0;
 }
+
+.mood-link:hover a{
+  color: blue;
+  transform: scale(0.6);
+}
+
 .music-logo {
   width: 30px;
   height: auto;
