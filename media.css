@@ -355,10 +355,6 @@ footer {
     gap: 5px;
   }
 
-  .navbar a {
-    margin: 10px;
-  }
-
   .gallery{ 
     grid-template-columns: 1fr; 
     width: 92%; 
