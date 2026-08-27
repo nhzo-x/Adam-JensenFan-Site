@@ -46,6 +46,11 @@ let angrySongs= [
     {
         title: "Gravedigger",
         image: "images/gravedigger.jpg"
+    },
+
+    {
+        title: "Bad Day for my Enemies",
+        image: "images/badday.jpg"
     }
 ];
 
@@ -145,6 +150,26 @@ let restlessSongs= [
     {
         title: "Tombstone",
         image: "images/tombstone.jpg"
+    },
+
+    {
+        title: "Baby Blue",
+        image: "images/babyblue.jpg"
+    },
+    
+    {
+        title: "Lowlife",
+        image: "images/lowlife.jpg"
+    },
+
+    {
+        title: "Melt into the Ceiling",
+        image: "images/melt.jpg"
+    },
+
+    {
+        title: "Medicine",
+        image:"images/medicine.jpg"
     }
 ]
 
@@ -219,6 +244,16 @@ let somberSongs = [
     {
         title: "Shoulda Known Better",
         image: "images/shoulda.jpg"
+    },
+
+    {
+        title: "Fucked in the Head",
+        image: "images/finthehead.jpg"
+    },
+
+    {
+        title: "Kerosene",
+        image: "images/kerosene.jpg"
     }
 ]
 
