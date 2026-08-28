@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="media.css">
+    
+<script>
+    let savedPageEra = localStorage.getItem("era");
+
+    if (savedPageEra === "mid") {
+        document.documentElement.classList.add("mid-era");
+    }
+
+    if (savedPageEra === "hymns") {
+        document.documentElement.classList.add("hymns-era");
+    }
+</script>
+
     <title>Adam Jensen Fan Site</title>
      <link rel="icon" type="image/png" href="images/aletter.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,3 +118,5 @@
 
 <footer>&copy; 2026 nhzo.x | Not affiliated with Adam Jensen</footer>
 <a href="#top" class="back-to-top">↑ Back to Top</a>
+<script src="era.js"></script>
+</body>
