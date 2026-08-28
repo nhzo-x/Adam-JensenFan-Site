@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+
+<script>
+    let savedPageEra = localStorage.getItem("era");
+
+    if (savedPageEra === "mid") {
+        document.documentElement.classList.add("mid-era");
+    }
+
+    if (savedPageEra === "hymns") {
+        document.documentElement.classList.add("hymns-era");
+    }
+</script>
+
     <title>Adam Jensen Fan Site</title>
     <link rel="icon" type="image/png" href="images/aletter.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +53,19 @@
         </p>
     </div>
 </div>
+
+<section class="era-selector">
+
+    <h3>SELECT AN ERA</h3>
+
+    <div class="era-buttons">
+        <button id="early-era">EARLY</button>
+        <button id="mid-era">MID</button>
+        <button id="hymns-era">HYMNS</button>
+    </div>
+
+</section>
+
 <div class="featured-card">
     <h2>Featured</h2>
     <p class="p2">Listen to Adam's debut Album, Hymns for the Damned!</p>
@@ -117,4 +144,5 @@
 
 <footer>&copy; 2026 nhzo.x | Not affiliated with Adam Jensen</footer>
 </body>
+<script src="era.js"></script>
 </html>
