@@ -89,6 +89,25 @@ body::before {
     z-index: -1;
 }
 
+body.fade-background::before {
+    opacity: 0;
+}
+
+body.hymns-era::before,
+html.hymns-era body::before {
+    background-image: url("images/hymns3.jpeg");
+    background-size: 100%;
+    filter: blur(1px);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 80%, transparent 100%);
+}
+
+body.mid-era::before,
+html.mid-era body::before {
+    filter: blur(1px);
+    background-image: url("images/adamjensen6.jpg");
+}
+
 h2 {
   color: lightgrey;
   text-align: center;
@@ -306,6 +325,24 @@ h2,
     /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
     transform: translate3d(0, 0, 0) !important;
   } 
+
+  body.hymns-era::before{
+    background-position: 50% !important; 
+    background-size: cover !important; 
+    filter: blur(1px) !important; 
+    
+    /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+html.mid-era body::before {
+    background-position: 50% !important; 
+    background-size: cover !important; 
+    filter: blur(1px) !important; 
+    
+    /* ADD THIS LINE to force mobile browsers to execute the 58% shift */
+    transform: translate3d(0, 0, 0) !important;
+  }
 
 }
 
