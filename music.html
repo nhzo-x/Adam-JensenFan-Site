@@ -7,6 +7,18 @@
 
     <link rel="stylesheet" href="music.css">
 
+<script>
+    let savedPageEra = localStorage.getItem("era");
+
+    if (savedPageEra === "mid") {
+        document.documentElement.classList.add("mid-era");
+    }
+
+    if (savedPageEra === "hymns") {
+        document.documentElement.classList.add("hymns-era");
+    }
+</script>
+
     <title>Adam Jensen Fan Site</title>
     <link rel="icon" type="image/png" href="images/aletter.png">
 
@@ -1510,6 +1522,7 @@
 </footer>
 
 <a href="#top" class="back-to-top">↑ Back to Top</a>
+<script src="era.js"></script>
 
 </body>
 </html>
