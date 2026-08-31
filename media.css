@@ -166,6 +166,15 @@ body.hymns-era h2 {
   transform: scale(1.1);
 }
 
+body.mid-era .navbar a:hover {
+    color: lightblue;
+}
+
+body.hymns-era .navbar a:hover {
+    color: lightsalmon;
+}
+
+
 
 /* --- HEADINGS --- */
 
