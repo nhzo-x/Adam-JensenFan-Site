@@ -32,7 +32,7 @@ h1 {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 
   font-family: 'Blacked Out' !important;
-  font-size: 500%;
+  font-size: 600%;
 }
 
 html.mid-era h1 {
@@ -386,7 +386,7 @@ footer {
 
   h1 {
     width: 90%;
-    font-size: 400%;
+    font-size: 450% !important;
     white-space: normal;
   }
 
