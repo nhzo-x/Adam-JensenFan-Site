@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="about.css">
 
 <script>
-    let savedPageEra = localStorage.getItem("era");
+    let savedPageEra = sessionStorage.getItem("era");
 
     if (savedPageEra === "mid") {
         document.documentElement.classList.add("mid-era");
