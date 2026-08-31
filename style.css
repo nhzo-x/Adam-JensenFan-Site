@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Blacked Out';
+    src: url('fonts/BlackedOut-Regular.ttf');
+}
+
 /* --- ANIMATION DEFINITION --- */
 @keyframes quickFade {
   from {
@@ -12,7 +17,7 @@
 
 h1 {
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter !important;
   color: white;
   border-bottom: 2px solid whitesmoke;
 
@@ -26,8 +31,18 @@ h1 {
 
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 
-  font-family: 'Road Rage', sans-serif;
+  font-family: 'Blacked Out' !important;
   font-size: 500%;
+}
+
+html.mid-era h1 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+html.hymns-era h1 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
 }
 
 
@@ -140,6 +155,16 @@ footer{
   font-size: 200%;
   font-weight: lighter;
   margin: -10px auto 20px auto;
+}
+
+body.mid-era h3 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+body.hymns-era h3 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
 }
 
 .era-buttons{
@@ -281,6 +306,16 @@ h2 {
   margin: 0 auto;
 }
 
+body.mid-era h2 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+body.hymns-era h2 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
+}
+
 h4 {
   color: lightgrey;
   text-align: center;
@@ -290,6 +325,14 @@ h4 {
   border-bottom: 2px solid lightgray;
   width: 150px;
   margin: 40px auto 0 auto; /* Keeps layout spacing uniform */
+}
+
+body.mid-era h4 {
+    color: lightblue;
+}
+
+body.hymns-era h4 {
+    color: lightsalmon;
 }
 
 .p2 {
