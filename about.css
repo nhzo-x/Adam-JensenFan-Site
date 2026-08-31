@@ -162,6 +162,15 @@ footer{
   transform: scale(1.1);
 }
 
+body.mid-era .navbar a:hover {
+    color: lightblue;
+}
+
+body.hymns-era .navbar a:hover {
+    color: lightsalmon;
+}
+
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
