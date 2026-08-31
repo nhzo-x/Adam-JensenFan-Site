@@ -45,6 +45,17 @@ html.hymns-era h1 {
     border-bottom: 2px solid lightsalmon;
 }
 
+body.mid-era h4 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+body.hymns-era h4 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
+}
+
+
 
 body {
   background-color: black;
