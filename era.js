@@ -21,7 +21,7 @@ function changeEra(era) {
             document.documentElement.classList.add("hymns-era");
         }
 
-        localStorage.setItem("era", era);
+        sessionStorage.setItem("era", era);
 
         document.body.classList.remove("fade-background");
 
@@ -50,7 +50,7 @@ if (midEra) {
 }
 
 
-let savedEra = localStorage.getItem("era");
+let savedEra = sessionStorage.getItem("era");
 
 if (savedEra === "mid") {
     document.body.classList.add("mid-era");
