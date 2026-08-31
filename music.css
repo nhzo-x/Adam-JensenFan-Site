@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Blacked Out';
+    src: url('fonts/BlackedOut-Regular.ttf');
+}
+
 /* --- ANIMATION LOOP --- */
 
 @keyframes quickFade {
@@ -120,7 +125,7 @@ footer {
 
 h1 {
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter !important;
   color: white;
   border-bottom: 2px solid whitesmoke;
 
@@ -134,9 +139,46 @@ h1 {
 
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 
-  font-family: 'Road Rage', sans-serif;
+  font-family: 'Blacked Out' !important;
   font-size: 500%;
 }
+
+html.mid-era h1 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+html.hymns-era h1 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
+}
+
+body.mid-era h2 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+body.hymns-era h2 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
+    
+}
+
+body.mid-era h3 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+body.hymns-era h3 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
+}
+
+
+body {
+  background-color: black;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -588,6 +630,32 @@ footer {
 
   color: lightgray;
 }
+
+body.mid-era .track-name {
+    color: lightblue;
+}
+
+body.mid-era .track-time {
+    color: lightblue;
+}
+
+body.mid-era .release-date {
+    color: lightblue;
+}
+
+
+body.hymns-era .track-name {
+    color: lightsalmon;
+}
+
+body.hymns-era .track-time {
+    color: lightsalmon;
+}
+
+body.hymns-era .release-date {
+    color: lightsalmon;
+}
+
 
 /* --- MOBILE --- */
 @media (max-width: 768px) {
