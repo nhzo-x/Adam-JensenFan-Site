@@ -59,3 +59,10 @@ if (savedEra === "mid") {
 if (savedEra === "hymns") {
     document.body.classList.add("hymns-era");
 }
+
+
+document.querySelectorAll(".navbar a").forEach(function(link) {
+    if (link.pathname === window.location.pathname) {
+        link.classList.add("active");
+    }
+});
