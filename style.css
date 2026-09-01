@@ -45,17 +45,6 @@ html.hymns-era h1 {
     border-bottom: 2px solid lightsalmon;
 }
 
-body.mid-era h4 {
-    color: lightblue;
-    border-bottom: 2px solid lightblue;
-}
-
-body.hymns-era h4 {
-    color: lightsalmon;
-    border-bottom: 2px solid lightsalmon;
-}
-
-
 
 body {
   background-color: black;
@@ -186,6 +175,16 @@ body.hymns-era h3 {
     border-bottom: 2px solid lightsalmon;
 }
 
+body.mid-era h4 {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+body.hymns-era h4 {
+    color: lightsalmon;
+    border-bottom: 2px solid lightsalmon;
+}
+
 .era-buttons{
   display: flex;
   justify-content: center;
@@ -286,6 +285,7 @@ body.hymns-era button{
   margin-top: 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   width: 100px;
+  font-family: 'Road Rage', sans-serif;
   padding-bottom: 8px;
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -507,6 +507,18 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
+  }
+
+   .navbar a.active {
+    font-weight: bold !important;
+  }
+
+    html.mid-era .navbar a.active {
+    color: lightblue !important;
+  }
+
+  html.hymns-era .navbar a.active {
+    color: lightsalmon !important;
   }
 
   
