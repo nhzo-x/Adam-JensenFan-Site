@@ -173,9 +173,9 @@ h2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: white;
     cursor: pointer;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: Blacked Out !important;
     font-size: 100%;
-    font-weight: bold;
+    font-weight: lighter;
     text-transform: uppercase;
 
     transition:
