@@ -171,7 +171,7 @@ html {
 
   padding: 10px 18px;
 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Blacked Out;
   font-size: 14px;
   text-decoration: none;
 
@@ -180,6 +180,14 @@ html {
   z-index: 1000;
 
   transition: 0.2s ease;
+}
+
+body.mid-era .back-to-top {
+    color: lightblue;
+}
+
+body.hymns-era .back-to-top {
+    color: lightsalmon;
 }
 
 .back-to-top:hover {
