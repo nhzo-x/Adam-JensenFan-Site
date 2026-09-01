@@ -123,44 +123,27 @@ footer{
 
 .navbar {
   text-align: center;
-
   padding-top: 10px;
   padding-bottom: 10px;
-
   max-width: 850px;
-
   margin: 0 auto 20px auto;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar a {
   font-size: 15px;
-
   margin: 12px;
-
   color: lightgray;
-
   text-transform: uppercase;
   text-decoration: none;
-
   font-family: manrope;
-
   font-weight: lighter;
-
   display: inline-block;
-
   transition:
     color 0.2s ease,
     transform 0.2s ease;
 }
 
-
-.navbar a:hover {
-  color: blue;
-
-  transform: scale(1.1);
-}
 
 body.mid-era .navbar a:hover {
     color: lightblue;
@@ -395,7 +378,7 @@ footer {
 
   h1 {
     width: 90%;
-    font-size: 450% !important;
+    font-size: 450% !important; 
     white-space: normal;
   }
 
@@ -413,6 +396,19 @@ footer {
     flex-wrap: wrap;
     gap: 5px;
   }
+
+  .navbar a.active {
+    font-weight: bold !important;
+  }
+
+    html.mid-era .navbar a.active {
+    color: lightblue !important;
+  }
+
+  html.hymns-era .navbar a.active {
+    color: lightsalmon !important;
+  }
+
 
   .about-container {
     display: flex;
