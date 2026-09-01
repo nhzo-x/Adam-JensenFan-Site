@@ -412,6 +412,18 @@ footer {
     gap: 5px;
   }
 
+   .navbar a.active {
+    font-weight: bold !important;
+  }
+
+    html.mid-era .navbar a.active {
+    color: lightblue !important;
+  }
+
+  html.hymns-era .navbar a.active {
+    color: lightsalmon !important;
+  }
+
 
   .gallery{ 
     grid-template-columns: 1fr; 
