@@ -405,6 +405,14 @@ p a{
   color: white;
 }
 
+body.mid-era p a {
+    color: lightblue;
+}
+
+body.hymns-era p a {
+    color: lightsalmon;
+}
+
 
 /* --- BACK TO TOP --- */
 
