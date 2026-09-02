@@ -170,6 +170,31 @@ let restlessSongs= [
     {
         title: "Medicine",
         image:"images/medicine.jpg"
+    },
+
+    {
+        title: "Flowers On My Grave",
+        image: "images/flowers.jpg"
+    },
+
+    {
+        title: "Skin of My Teeth",
+        image: "images/skinofmyteeth.jpg"
+    },
+
+    {
+        title: "Inmate 8576",
+        image: "images/inmate.jpg"
+    },
+
+    {
+        title: "Champagne Vein",
+        image: "images/hymns.jpg"
+    },
+
+    {
+        title: "Smithereens",
+        image: "images/hymns.jpg"
     }
 ]
 
@@ -254,6 +279,26 @@ let somberSongs = [
     {
         title: "Kerosene",
         image: "images/kerosene.jpg"
+    },
+
+    {
+        title: "Never Get High On Your Own Supply",
+        image: "images/nevergethigh.jpg"
+    },
+
+    {
+        title: "Outlaw",
+        image: "images/outlaw.jpg"
+    },
+
+    {
+        title: "Pain",
+        image: "images/pain.jpg"
+    },
+
+    {
+        title: "You Won't Answer My Phone Calls but I bet You'll Listen to This Song so I Guess This Is the Only Way to Talk to You",
+        image: "images/youwontanswer.jpg"
     }
 ]
 
