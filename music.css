@@ -82,7 +82,9 @@ h4,
 .skip-container,
 footer,
 .mood-link,
-.music-links {
+.music-links,
+.daily-song,
+.daily-song img{
   opacity: 0;
   animation: quickFade 0.6s ease-in forwards;
 }
@@ -304,6 +306,131 @@ body.mid-era .navbar a:hover {
 
 body.hymns-era .navbar a:hover {
     color: lightsalmon;
+}
+
+
+/* --- DAILY SONG --- */
+
+.daily-song {
+  width: 100%;
+  max-width: 900px;
+  margin: 35px auto 45px auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 30px;
+}
+
+.daily-song h2 {
+  color: lightgray;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: none !important;
+  width: auto !important;
+  margin: 0 0 20px 0;
+}
+
+.daily-song-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.daily-song-content img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+}
+
+.daily-song-content > div {
+  position: relative;
+  padding-left: 35px;
+  text-align: left;
+}
+
+.daily-song-content > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background-color: lightgray;
+}
+
+.daily-song h3 {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 0;
+  white-space: nowrap;
+  border-bottom: none !important;
+}
+
+.daily-song p {
+  display: none;
+}
+
+
+/* --- ERA COLORS --- */
+
+body.mid-era .daily-song h3 {
+  color: lightblue;
+}
+
+body.mid-era .daily-song-content > div::before {
+  background-color: lightblue;
+}
+
+body.hymns-era .daily-song h3 {
+  color: lightsalmon;
+}
+
+body.hymns-era .daily-song-content > div::before {
+  background-color: lightsalmon;
+}
+
+
+/* --- MOBILE --- */
+
+@media (max-width: 768px) {
+
+  .daily-song {
+    width: 90%;
+    margin: 30px auto 40px auto;
+  }
+
+  .daily-song-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .daily-song-content img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .daily-song-content > div {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .daily-song-content > div::before {
+    display: none;
+  }
+
+  .daily-song h3 {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
+
 }
 
 
