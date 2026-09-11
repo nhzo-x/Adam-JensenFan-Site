@@ -161,6 +161,12 @@ footer{
     transform 0.2s ease;
 }
 
+.navbar a:hover {
+  color: blue;
+
+  transform: scale(1.1);
+}
+
 
 body.mid-era .navbar a:hover {
     color: lightblue;
