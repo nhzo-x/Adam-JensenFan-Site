@@ -451,9 +451,9 @@ body.hymns-era .daily-song-content > div::before {
     display: none;
   }
 
-  .daily-song h3 {
+ .daily-song h3 {
     font-size: 1.4rem;
-    white-space: nowrap !important;
+    white-space: normal !important;
   }
 
 
