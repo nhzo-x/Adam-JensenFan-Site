@@ -383,7 +383,7 @@ body.hymns-era .navbar a:hover {
   font-size: 1.8rem;
   line-height: 1.2;
   margin: 0;
-  white-space: nowrap;
+  white-space: normal !important;
   border-bottom: none !important;
 }
 
